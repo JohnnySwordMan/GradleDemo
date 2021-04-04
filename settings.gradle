@@ -1,3 +1,4 @@
+include 'asm-plugin'
 include ':gradleplugin'
 include ':app'
 rootProject.name = "GradleLearning"

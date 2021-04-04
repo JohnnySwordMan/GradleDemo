@@ -3,6 +3,7 @@ plugins {
     id 'kotlin-android'
     id 'test_plugin'
     id 'byte-plugin'
+    id 'plugin-asm'
 }
 
 android {

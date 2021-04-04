@@ -1,0 +1,34 @@
+apply plugin: 'kotlin'
+apply plugin: 'maven'
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+dependencies {
+    // kotlin基础库依赖
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    // android gradle plugin依赖
+    implementation "com.android.tools.build:gradle:3.5.3"
+    // gradle api依赖
+    implementation gradleApi()
+
+//    implementation 'org.ow2.asm:asm:8.0'
+//    implementation 'org.ow2.asm:asm-util:8.0'
+//    implementation 'org.ow2.asm:asm-commons:8.0'
+}
+
+// 上传本地maven
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: uri("$rootDir/maven"))
+            pom.groupId = 'com.mars.plugin'
+            pom.artifactId = 'asmplugin'
+            pom.version = '0.0.2'
+        }
+    }
+}
