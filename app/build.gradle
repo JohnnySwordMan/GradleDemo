@@ -3,6 +3,17 @@ plugins {
     id 'kotlin-android'
     id 'test_plugin'
     id 'byte-plugin'
+    id 'com.bytecode.reinforce'
+}
+
+foo {
+    msg = "bytecode---test"
+}
+
+byteReinforce {
+    username = "JohnnySwordMan"
+    password =  "123456"
+    reinforceToolPath = "sss"
 }
 
 android {

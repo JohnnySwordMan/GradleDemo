@@ -7,12 +7,14 @@ buildscript {
         }
         google()
         jcenter()
+        mavenLocal()
     }
     dependencies {
         classpath "com.android.tools.build:gradle:4.1.0"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "com.mars.plugin:testplugin:1.0.0"
         classpath "com.mars.plugin:byte_plugin:1.0.0"
+        classpath "com.bytecode:reinforce:2.1.3"
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
