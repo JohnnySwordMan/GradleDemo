@@ -10,6 +10,7 @@ package com.bytecode.plugin
 //)
 
 // Extension用kotlin写一直编译失败
+// 需要无参构造函数
 open class ReinforceExtension {
      var username: String = ""
      var password: String = ""

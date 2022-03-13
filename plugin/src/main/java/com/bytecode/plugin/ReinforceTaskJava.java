@@ -14,10 +14,10 @@ public class ReinforceTaskJava extends DefaultTask {
 
     private String name;
     private File apkFile;
-    private ReinforceExt reinforceExt;
+    private ReinforceExtension reinforceExt;
 
     @Inject
-    public ReinforceTaskJava(String name, File apk, ReinforceExt reinforceExt) {
+    public ReinforceTaskJava(String name, File apk, ReinforceExtension reinforceExt) {
         this.name = name;
         this.apkFile = apk;
         this.reinforceExt = reinforceExt;
